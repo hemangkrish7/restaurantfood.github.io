@@ -1,0 +1,84 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+
+#logo {
+  height: 80px; /* Adjust logo size */
+}
+
+.container {
+  margin-top: 20px;
+}
+
+.menu-title {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+/* Menu item styles */
+.menu-item .card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-item .card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card {
+  margin: 15px 0;
+}
+
+#search-input {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.filter-btn {
+  margin: 5px;
+}
+
+.card-img-top {
+  height: 200px; /* Fixed height for images */
+  object-fit: cover; /* Ensure the image covers the entire area while maintaining aspect ratio */
+}
+
+.card-title {
+  font-family: 'Roboto', sans-serif; /* Use Roboto font for titles */
+  font-weight: 700; /* Make the font bold */
+}
+
+@media (max-width: 576px) {
+  .navbar-nav {
+    display: none; /* Hide the navigation links */
+  }
+
+  .navbar-toggler {
+    display: block !important; /* Show the toggler */
+  }
+
+  .navbar-collapse {
+    display: block !important; /* Ensure the collapsed items are visible */
+  }
+
+  #search-input {
+    display: block !important; /* Show the search input */
+    margin-top: 10px; /* Optional: Add some spacing */
+  }
+}
+
+
+/* Media query for large devices (min-width: 992px) */
+@media (min-width: 992px) {
+  #search-input {
+    width: 50%; /* Adjust search input width */
+  }
+
+  .card {
+    margin: 15px 5px; /* Adjust margin for better spacing */
+  }
+}
+
+
+  
