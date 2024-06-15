@@ -2,7 +2,6 @@ body {
   font-family: Arial, sans-serif;
 }
 
-
 #logo {
   height: 80px; /* Adjust logo size */
 }
@@ -16,6 +15,7 @@ body {
   font-weight: bold;
   font-size: 2.5rem;
 }
+
 /* Menu item styles */
 .menu-item .card {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -49,25 +49,45 @@ body {
   font-weight: 700; /* Make the font bold */
 }
 
+/* Media query for extra small devices (max-width: 576px) */
 @media (max-width: 576px) {
-  .navbar-nav {
-    display: none; /* Hide the navigation links */
-  }
-
-  .navbar-toggler {
-    display: block !important; /* Show the toggler */
-  }
-
   .navbar-collapse {
-    display: block !important; /* Ensure the collapsed items are visible */
+    display: none; /* Ensure the collapsed items are hidden by default */
+  }
+
+  .navbar-collapse.show {
+    display: block !important; /* Show the collapsed items when expanded */
   }
 
   #search-input {
-    display: block !important; /* Show the search input */
+    display: none; /* Hide the search input by default */
+  }
+
+  .navbar-collapse.show #search-input {
+    display: block !important; /* Show the search input when expanded */
     margin-top: 10px; /* Optional: Add some spacing */
   }
 }
 
+/* Media query for small devices (max-width: 768px) */
+@media (max-width: 768px) {
+  .navbar-collapse {
+    display: none; /* Ensure the collapsed items are hidden by default */
+  }
+
+  .navbar-collapse.show {
+    display: block !important; /* Show the collapsed items when expanded */
+  }
+
+  #search-input {
+    display: none; /* Hide the search input by default */
+  }
+
+  .navbar-collapse.show #search-input {
+    display: block !important; /* Show the search input when expanded */
+    margin-top: 10px; /* Optional: Add some spacing */
+  }
+}
 
 /* Media query for large devices (min-width: 992px) */
 @media (min-width: 992px) {
@@ -79,6 +99,3 @@ body {
     margin: 15px 5px; /* Adjust margin for better spacing */
   }
 }
-
-
-  
