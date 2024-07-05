@@ -71,9 +71,6 @@ We welcome contributions to improve our menu website. To contribute:
 - Report issues or suggest enhancements by opening a GitHub issue.
 - Submit pull requests with proposed changes or fixes.
 
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ---
 
